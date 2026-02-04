@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
 </head>
 <body>
+    <!-- Sidebar -->
     <div id="dashboard-sidebar">
-
         <div id="dashboard-sidebar-logo">
-            <p><img src="/web_dev/images/dashboard-logo-icon.png" alt="dash-logo"><span>Dashboard</span></p>
+            <img src="/web_dev/images/dashboard-logo-icon.png" alt="dash-logo" height="50px" width="auto"><p><span>Dashboard</span></p>
         </div>
     
         <div id="sidebar-group-one">
-            <a href="#"><img src="/web_dev/images/home_24dp-icon-white.png"><span>Home</span></a>
-            <a href="#"><img src="/web_dev/images/account_box_24dp-icon-white.png"><span>Profile</span></a>
-            <a href="#"><img src="/web_dev/images/chat_24dp-icon-white.png"><span>Messages</span></a>
-            <a href="#"><img src="/web_dev/images/history_2_24dp-icon-white.png"><span>History</span></a>
-            <a href="#"><img src="/web_dev/images/pending_actions_24dp-icon-white.png"><span>Tasks</span></a>
-            <a href="#"><img src="/web_dev/images/groups_24dp-icon-white.png"><span>Communities</span></a>
+            <img src="/web_dev/images/home_24dp-icon-white.png"><a href="#"><span>Home</span></a>
+            <img src="/web_dev/images/account_box_24dp-icon-white.png"><a href="#"><span>Profile</span></a>
+            <img src="/web_dev/images/chat_24dp-icon-white.png"><a href="#"><span>Messages</span></a>
+            <img src="/web_dev/images/history_2_24dp-icon-white.png"><a href="#"><span>History</span></a>
+            <img src="/web_dev/images/pending_actions_24dp-icon-white.png"><a href="#">Tasks</a>
+            <img src="/web_dev/images/groups_24dp-icon-white.png"><a href="#"><span>Communities</span></a>
         </div>
 
         <div id="sidebar-group-two">
-            <a href="#"><img src="/web_dev/images/settings_24dp-icon-white.png"><span>Settings</span></a>
-            <a href="#"><img src="/web_dev/images/contact_support-icon-white.png"><span>Support</span></a>
-            <a href="#"><img src="/web_dev/images/privacy-tip-icon-white.png"><span>Privacy</span></a>
+            <img src="/web_dev/images/settings_24dp-icon-white.png"><a href="#"><span>Settings</span></a>
+            <img src="/web_dev/images/contact_support-icon-white.png"><a href="#"><span>Support</span></a>
+            <img src="/web_dev/images/privacy-tip-icon-white.png"><a href="#"><span>Privacy</span></a>
         </div>
     </div>
-
+<!-- TopBar -->
     <div id="dashboard-topbar">
         <div id="search">
             <img id="search-icon" src="/web_dev/images/search-icon-black.png" alt="Search Icon" height="30px" width="auto">
@@ -47,11 +50,34 @@
                 <h1>John Doe</h1>
             </div>
         </div>
-        
         <div id="topbar-user-info-btns">
-            <button id="topbar-new-button">New</button>
-            <button id="topbar-upload-button">Upload</button>
-            <button id="topbar-share-button">Share</button>
+                <button id="topbar-new-button">New</button>
+                <button id="topbar-upload-button">Upload</button>
+                <button id="topbar-share-button">Share</button>
+        </div>
+    </div>
+        <!-- Main -->
+    <div id="dashboard-main-container">
+        <div id="main-projects-container">
+            <h2>Your Projects</h2>
+            <div id="project-cards-container">
+                <div class="dashboard-main-card">card 1</div>
+                <div class="dashboard-main-card">card 2</div>
+                <div class="dashboard-main-card">card 3</div>
+                <div class="dashboard-main-card">card 4</div>
+                <div class="dashboard-main-card">card 5</div>
+                <div class="dashboard-main-card">card 6</div>
+            </div>
+        </div>
+        <div id="main-announcements-trending-container">
+            <div id="main-announcements-container">
+                <h2>Announcements</h2>
+                <div class="dashboard-main-card" id="announcement-card">card 7</div>
+            </div>
+            <div id="main-trending-container">
+                <h2>Trending</h2>
+                <div class="dashboard-main-card" id="trending-card">card 8</div>
+            </div>
         </div>
     </div>
 </body>
