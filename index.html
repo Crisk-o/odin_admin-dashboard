@@ -13,7 +13,7 @@
     <!-- Sidebar -->
     <div id="dashboard-sidebar">
         <div id="dashboard-sidebar-logo">
-            <img src="/web_dev/images/dashboard-logo-icon.png" alt="dash-logo" height="50px" width="auto"><p><span>Dashboard</span></p>
+            <img src="/web_dev/images/dashboard-logo-icon.png" alt="dashboard-logo" height="auto" width="100%"><p><span>Dashboard</span></p>
         </div>
     
         <div id="sidebar-group-one">
@@ -44,10 +44,10 @@
         </div>
 
         <div id="topbar-user-info">
-            <img src="/web_dev/images/account-circle-icon-black.png" alt="User Avatar" width="100px" height="100px">
+            <img id="topbar-user-avatar" src="/web_dev/images/@material-design-icons/svg/filled/person.svg" alt="User Avatar" width="75px" height="auto">
             <div id="topbar-greeting-user-name">
                 <p>Hi there,</p>
-                <h1>John Doe</h1>
+                <h1>John Doe (@johnDoe)</h1>
             </div>
         </div>
         <div id="topbar-user-info-btns">
@@ -58,25 +58,103 @@
     </div>
         <!-- Main -->
     <div id="dashboard-main-container">
+
         <div id="main-projects-container">
             <h2>Your Projects</h2>
             <div id="project-cards-container">
-                <div class="dashboard-main-card">card 1</div>
-                <div class="dashboard-main-card">card 2</div>
-                <div class="dashboard-main-card">card 3</div>
-                <div class="dashboard-main-card">card 4</div>
-                <div class="dashboard-main-card">card 5</div>
-                <div class="dashboard-main-card">card 6</div>
+                <div class="project-card">
+                    <div class="project-card-interior">
+                        <div class="project-card-interior-text">
+                            <h3>Super Cool Project</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>   
+                        </div>
+                        <div class="project-card-buttons-container">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/star_rate.svg">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/view_agenda.svg">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/share.svg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-interior">
+                        <div class="project-card-interior-text">
+                            <h3>Less Cool Project</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                        </div>
+                        <div class="project-card-buttons-container">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/star_rate.svg">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/view_agenda.svg">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/share.svg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-interior">
+                        <div class="project-card-interior-text">
+                            <h3>Project/App 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                        </div>
+                        <div class="project-card-buttons-container">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/star_rate.svg">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/view_agenda.svg">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/share.svg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-interior">
+                        <div class="project-card-interior-text">
+                            <h3>Project/App 4</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                        </div>
+                        <div class="project-card-buttons-container">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/star_rate.svg">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/view_agenda.svg">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/share.svg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-interior">
+                        <div class="project-card-interior-text">
+                            <h3>Project/App 5</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                        </div>
+                        <div class="project-card-buttons-container">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/star_rate.svg">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/view_agenda.svg">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/share.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-interior">
+                        <div class="project-card-interior-text">
+                            <h3>Project/App 6</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                        </div>
+                        <div class="project-card-buttons-container">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/star_rate.svg">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/view_agenda.svg">
+                            <img src="/web_dev/images/@material-design-icons/svg/filled/share.svg">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
         <div id="main-announcements-trending-container">
             <div id="main-announcements-container">
                 <h2>Announcements</h2>
-                <div class="dashboard-main-card" id="announcement-card">card 7</div>
+                <div id="announcement-card">announcement-card</div>
             </div>
             <div id="main-trending-container">
                 <h2>Trending</h2>
-                <div class="dashboard-main-card" id="trending-card">card 8</div>
+                <div id="trending-card">trending-card</div>
             </div>
         </div>
     </div>
