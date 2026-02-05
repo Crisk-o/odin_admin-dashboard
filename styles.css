@@ -115,8 +115,8 @@ body{
 }
 #topbar-user-info-btns {
     display: flex;
-    height: 50px;
-    gap: 10px;
+    height: 40px;
+    gap: 45px;
     width: 80%;
     justify-content: end;
 }
@@ -124,14 +124,13 @@ body{
     border-radius: 30px;
     background-color:#4287f5;
     color: white;
-    font-size: 16px;
-    width: 150px;
+    font-size: 20px;
+    width: 125px;
     cursor: pointer;
     
 }
 #topbar-user-info-btns > button:hover {
     background-color: #1c3b6d;
-    outline: 2px groove goldenrod;
 }
 
 /*Main Container - Holds Projects/Announcements/Trending Containers*/
@@ -139,46 +138,51 @@ body{
     box-sizing: border-box;
     grid-column-start: 2;
     display: grid;
-    grid-template-columns: 65% 35%;
-    /* width: calc(100vw - 300px); */
+    grid-template-columns: 60% 40%;
+    max-width: calc(100vw - 275px);
     width: 100%;
     height: 100%;
     background-color: rgba(225, 232, 240);
     box-shadow: 0px 5px 5px rgba(205, 208, 213) inset;
-    outline: 5px solid red;
 }
 /* Hold "Your Projects" heading and Projects container*/
 #main-projects-container {
+    display: flex;
+    flex-direction: column;
     margin: auto;
     box-sizing: border-box;
     width: 95%;
     max-width: 95%;
-    height: fit-content;
-    max-height: calc(100vh - 175px);
-    outline: 5px solid orange;
+    height: 100%;
+    max-height: calc(100vh - 200px);
 
+}
+#main-projects-container > h2 {
+    margin: 0;
 }
 
 /*Inside the main-projects-container -- holds the project cards*/
 #project-cards-container { 
     display: grid;
-    grid-template-columns: repeat(2, 40%);
+    grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(3, 30%);
     width: 100%;
-    height: 90%;
-    margin: auto;
-    gap: 30px;
+    height: 100%;
+    gap: 20px;
+    column-gap: 0px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
 
 }
 /*Styles Project Cards*/
 .project-card {
-    padding: 10px;
     box-sizing: border-box;
     border-left: 8px solid goldenrod;
     background-color: white;
-    border-radius: 5px;
-    height: 200px;
-    width: 400px;
+    border-radius: 10px;
+    height: 225px;
+    width: 425px;
     box-shadow: 5px 5px 5px grey;
 }
 .project-card-interior {
@@ -188,13 +192,12 @@ body{
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+    padding: 10px;
 }
-
-.project-card-interior-text{
-    align-content: space-between;
+.project-card-interior-text > p{
+    color: rgb(119, 119, 119)
 }
 .project-card-interior-text > p, .project-card-interior-text > h3{
-    color: rgb(46, 46, 46);
     margin: 0;
     padding: 0;
 }
@@ -203,38 +206,79 @@ body{
     justify-content: flex-end;
     gap: 25px;
     width: 100%;
-
 }
 
 /*Announcements and Trending Container*/
 #main-announcements-trending-container {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 175px);
+    margin: auto; 
+    box-sizing: border-box;
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: calc(100vh - 200px);
+    padding-top: 10px;
 }
-/*announcements container only*/
-#main-announcements-container {
+
+#main-announcements-container, #main-trending-container {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%; 
-    outline: 5px solid green;
+    
 }
-/*trending container only*/
-#main-trending-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    outline: 5px solid gold
+#main-announcements-container > h2, #main-trending-container > h2{
+    margin: 0;
 }
+
 #announcement-card, #trending-card {
     background-color: white;
-    border-radius: 5px;
-    height: 300px;
-    width: 300px;
+    border-radius: 10px;
+    height: 100%;
+    width: 50%;
     box-shadow: 5px 5px 5px grey;
-    text-align: center;
-    
+}
+#trending-card {
+    display: flex;
+    flex-direction: column;
+}
+#trending-account-container {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    grid-template-rows: repeat(4, 25%);
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+
+}
+.trending-account-text > h4, .trending-account-text > p {
+    margin: 0;
+    padding: 0;
+}
+.trending-account-text > p{
+    color: rgb(119, 119, 119)
+}
+
+#announcement-card-interior{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 90%;
+    width: 80%;
+}
+#announcement-card-interior > div:nth-child(-n+2) {
+    border-bottom: 3px solid gainsboro;
+}
+.announcement-text > p{
+    color: rgb(119, 119, 119);
+}
+.announcement-text > p, .announcement-text > h4{
+    margin: 0;
+    padding: 0;
 }
 

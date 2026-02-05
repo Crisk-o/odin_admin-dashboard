@@ -13,22 +13,22 @@
     <!-- Sidebar -->
     <div id="dashboard-sidebar">
         <div id="dashboard-sidebar-logo">
-            <img src="/web_dev/images/dashboard-logo-icon.png" alt="dashboard-logo" height="auto" width="100%"><p><span>Dashboard</span></p>
+            <img src="/web_dev/images/@material-design-icons/svg/filled/dashboard_white.svg" alt="dashboard-logo" height="auto" width="100%" style="fill: white"><p><span>Dashboard</span></p>
         </div>
     
         <div id="sidebar-group-one">
-            <img src="/web_dev/images/home_24dp-icon-white.png"><a href="#"><span>Home</span></a>
-            <img src="/web_dev/images/account_box_24dp-icon-white.png"><a href="#"><span>Profile</span></a>
-            <img src="/web_dev/images/chat_24dp-icon-white.png"><a href="#"><span>Messages</span></a>
-            <img src="/web_dev/images/history_2_24dp-icon-white.png"><a href="#"><span>History</span></a>
-            <img src="/web_dev/images/pending_actions_24dp-icon-white.png"><a href="#">Tasks</a>
-            <img src="/web_dev/images/groups_24dp-icon-white.png"><a href="#"><span>Communities</span></a>
+            <img src="/web_dev/images/@material-design-icons/svg/filled/home_white.svg"><a href="#"><span>Home</span></a>
+            <img src="/web_dev/images/@material-design-icons/svg/filled/account_box_white.svg"><a href="#"><span>Profile</span></a>
+            <img src="/web_dev/images/@material-design-icons/svg/filled/message_white.svg"><a href="#"><span>Messages</span></a>
+            <img src="/web_dev/images/@material-design-icons/svg/filled/history_white.svg"><a href="#"><span>History</span></a>
+            <img src="/web_dev/images/@material-design-icons/svg/filled/pending_actions_white.svg"><a href="#">Tasks</a>
+            <img src="/web_dev/images/@material-design-icons/svg/filled/groups_white.svg"><a href="#"><span>Communities</span></a>
         </div>
 
         <div id="sidebar-group-two">
-            <img src="/web_dev/images/settings_24dp-icon-white.png"><a href="#"><span>Settings</span></a>
-            <img src="/web_dev/images/contact_support-icon-white.png"><a href="#"><span>Support</span></a>
-            <img src="/web_dev/images/privacy-tip-icon-white.png"><a href="#"><span>Privacy</span></a>
+            <img src="/web_dev/images/@material-design-icons/svg/filled/settings_white.svg"><a href="#"><span>Settings</span></a>
+            <img src="/web_dev/images/@material-design-icons/svg/filled/help_white.svg"><a href="#"><span>Support</span></a>
+            <img src="/web_dev/images/@material-design-icons/svg/filled/privacy_tip_white.svg"><a href="#"><span>Privacy</span></a>
         </div>
     </div>
 <!-- TopBar -->
@@ -38,9 +38,9 @@
             <input id="search-bar" type="text" placeholder="Search...">
         </div>
         <div id="topbar-icons">
-            <img id="notifications-icon" src="/web_dev/images/notifications-icon-black.png" alt="Notifications" height="30px" width="auto">
-            <img src="/web_dev/images/account-circle-icon-black.png" alt="User Avatar" height="30px" width="auto">
-            <a href="#">John Doe</a>
+            <a href="#"><img id="notifications-icon" src="/web_dev/images/@material-design-icons/svg/outlined/notifications_active.svg" alt="Notifications" height="40px" width="auto"></a>
+            <a href="#"><img src="/web_dev/images/@material-design-icons/svg/filled/person.svg"  alt="User Avatar" height="50px" width="auto"></a>
+            <p>John Doe</p>
         </div>
 
         <div id="topbar-user-info">
@@ -150,11 +150,56 @@
         <div id="main-announcements-trending-container">
             <div id="main-announcements-container">
                 <h2>Announcements</h2>
-                <div id="announcement-card">announcement-card</div>
+                <div id="announcement-card">
+                    <div id="announcement-card-interior">
+                        <div class="announcement-text">
+                            <h4>Site Maintenance</h4>
+                            <p>ercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </p>
+                        </div>
+                        <div class="announcement-text">
+                            <h4>Community Share Day</h4>
+                            <p>ncididunt citation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </p>
+                        </div>
+                        <div class="announcement-text">
+                            <h4>Updated Privacy Policy</h4>
+                            <p>ncididunt ut labore et dolore magna aliqua. Laboris nisi ut aliquip ex ea comolor in reprehenderit </p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="main-trending-container">
                 <h2>Trending</h2>
-                <div id="trending-card">trending-card</div>
+                <div id="trending-card">
+                    <div id="trending-account-container">
+                        <img src="/web_dev/images/@material-design-icons/svg/filled/account_circle.svg" alt="trending-account-avatar" height="50px" width="auto">
+                        <div class="trending-account-text">
+                            <h4>@userName</h4>
+                            <p>Customer Service Representative</p>
+                        </div>
+
+                    </div>
+                    <div id="trending-account-container">
+                        <img src= "https://api.dicebear.com/9.x/avataaars-neutral/svg" alt="avatar"/>
+                        <div class="trending-account-text">
+                            <h4>@userName</h4>
+                            <p>Director of Dreams</p>
+                        </div>
+                    </div>
+                    <div id="trending-account-container">
+                        <img src="/web_dev/images/@material-design-icons/svg/filled/account_circle.svg" alt="trending-account-avatar" height="50px" width="auto">
+                        <div class="trending-account-text">
+                            <h4>@userName</h4>
+                            <p>Soothsayer</p>
+                        </div>
+                    </div>
+                    <div id="trending-account-container">
+                        <img src="/web_dev/images/@material-design-icons/svg/filled/account_circle.svg" alt="trending-account-avatar" height="50px" width="auto">
+                        <div class="trending-account-text">
+                            <h4>@userName</h4>
+                            <p>Dream Maker</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
